@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/purple_200"
+                android:padding="@dimen/padding_regular"
+                android:text="@string/article_title"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textColor="#5E35B1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/article_subheading"
+                android:layout_width="424dp"
+                android:layout_height="37dp"
+                android:padding="@dimen/padding_regular"
+                android:text="@string/article_subtitle"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="152dp"
+                android:src="@drawable/beatles"
+                android:contentDescription="TODO" />
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:padding="@dimen/padding_regular"
+                android:text="@string/article_text" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
